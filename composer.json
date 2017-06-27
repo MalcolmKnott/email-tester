@@ -8,5 +8,10 @@
             "email": "malcolm.knott@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Malcolmknott\\Emailtester\\": "src"
+        }
+    },
     "require": {}
 }
