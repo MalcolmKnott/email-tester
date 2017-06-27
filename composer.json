@@ -1,0 +1,12 @@
+{
+    "name": "malcolmknott/emailtester",
+    "description": "Send test emails using Artisan command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malcolm Knott",
+            "email": "malcolm.knott@gmail.com"
+        }
+    ],
+    "require": {}
+}
