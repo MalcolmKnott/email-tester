@@ -19,6 +19,10 @@ class EmailtesterServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/emailtester.php' => config_path('emailtester.php'),
         ], 'config');
+
+        $this->publishes([
+            __DIR__.'/resources/views' => base_path('resources/views/vendor/emailtester'),
+        ], 'views');
     }
 
     /**

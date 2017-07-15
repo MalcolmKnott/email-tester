@@ -29,12 +29,11 @@ class TestEmail extends Mailable
      */
     public function build()
     {
+        $subject = 'Test Email From ' . config('app.name') . ' - ' .
+            ucwords(config('app.env')) . ' - ' . Carbon::now()->toDateTimeString();
+
         return $this->from(config('mail.from.address'), config('mail.from.name'))
-                    ->subject(
-                        'Test Email From ' . config('app.name') . ' - ' .
-                        ucwords(config('app.env')) . ' - ' .
-                        Carbon::now()->toDateTimeString()
-                    )
-                    ->text('emailtester::emails.test_email');
+                    ->subject($subject)
+                    ->markdown('emailtester::emails.test_email');
     }
 }

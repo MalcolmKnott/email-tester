@@ -42,3 +42,11 @@ Scheduled Job
 ```php
 $schedule->command('send-email example@example.com 1')->twiceDaily(9, 21);
 ```
+
+## Email Template
+
+Publish the view file to add your own message.
+
+```bash
+php artisan vendor:publish --provider="Malcolmknott\Emailtester\EmailtesterServiceProvider" --tag="views"
+```
